@@ -81,7 +81,7 @@ class Loja:
         print("\n--------------------------------------------------")
         print("------------- RECIBO DA COMPRA -------------------")
         print("--------------------------------------------------")
-        carrinho.exibir_itens(mostrar_titulo=False)  # <--- Aqui está o ajuste
+        carrinho.exibir_itens(mostrar_titulo=False) 
         print(f"Total pago: R$ {total:.2f}")
         print("--------------------------------------------------\n")
         carrinho.esvaziar()
