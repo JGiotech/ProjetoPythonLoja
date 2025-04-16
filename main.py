@@ -63,9 +63,9 @@ def menu_principal():
                 continue
 
             carrinho.exibir_itens()
-            nome_prod_remover = input("\nDigite o nome do produto que deseja remover do carrinho: ").strip()
+            remove_produto = input("\nDigite o nome do produto que deseja remover do carrinho: ").strip()
             for produto, quantidade in carrinho.itens:
-                if produto.nome_produto.lower().strip() == nome_prod_remover.lower():
+                if produto.nome_produto.lower().strip() == remove_produto.lower():
                     carrinho.itens.remove((produto, quantidade))
                     produto.quantidade += quantidade
                     print(f"{quantidade} '{produto.nome_produto}' removido(s) do carrinho.\n")
